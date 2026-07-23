@@ -1,5 +1,7 @@
 # Othello Board Game
 
+[Project was imported from a university GitLab account]
+
 A Java implementation of Othello board game, featuring a text-based UI, a client-server multiplayer
 mode over sockets, and two computer AI strategies.
 
