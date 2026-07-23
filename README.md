@@ -26,7 +26,7 @@ Made in group with Jordan Sberlo.
 From the project root:
 
 ```bash
-javac -d out $(find src -name "*.java")
+javac -d out (Get-ChildItem -Recurse -Filter *.java -Path src | ForEach-Object { $_.FullName })
 ```
 
 This compiles all source files into an `out/` folder, preserving the
@@ -70,5 +70,3 @@ To play from a different device on the same network, use the server
 machine's local IP address instead of `localhost`. Playing across different
 networks requires port forwarding or a tunneling tool and isn't set up out
 of the box.
-
-
